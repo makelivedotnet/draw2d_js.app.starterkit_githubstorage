@@ -11,22 +11,6 @@
     "cssClass": "draw2d_shape_node_Between",
     "ports": [
       {
-        "type": "draw2d.OutputPort",
-        "id": "5c29809b-fbcd-7b13-53d3-6717a689384b",
-        "width": 10,
-        "height": 10,
-        "alpha": 0,
-        "userData": {},
-        "cssClass": "draw2d_OutputPort",
-        "bgColor": "#FF9100",
-        "color": "#1B1B1B",
-        "stroke": 0,
-        "maxFanOut": 9007199254740991,
-        "name": "output0",
-        "port": "draw2d.OutputPort",
-        "locator": "draw2d.layout.locator.OutputPortLocator"
-      },
-      {
         "type": "draw2d.InputPort",
         "id": "73353df6-d42c-e8b1-1d85-519ef0b67ba3",
         "width": 10,
@@ -41,6 +25,22 @@
         "name": "input0",
         "port": "draw2d.InputPort",
         "locator": "draw2d.layout.locator.InputPortLocator"
+      },
+      {
+        "type": "draw2d.OutputPort",
+        "id": "5c29809b-fbcd-7b13-53d3-6717a689384b",
+        "width": 10,
+        "height": 10,
+        "alpha": 0,
+        "userData": {},
+        "cssClass": "draw2d_OutputPort",
+        "bgColor": "#FF9100",
+        "color": "#1B1B1B",
+        "stroke": 0,
+        "maxFanOut": 9007199254740991,
+        "name": "output0",
+        "port": "draw2d.OutputPort",
+        "locator": "draw2d.layout.locator.OutputPortLocator"
       }
     ],
     "bgColor": "#DCE775",
@@ -82,6 +82,88 @@
     "radius": 0
   },
   {
+    "type": "draw2d.shape.node.Between",
+    "id": "6636ec03-5392-1712-efc1-beb150ec3f2b",
+    "x": 405,
+    "y": 486,
+    "width": 50,
+    "height": 50,
+    "alpha": 1,
+    "userData": {},
+    "cssClass": "draw2d_shape_node_Between",
+    "ports": [
+      {
+        "type": "draw2d.OutputPort",
+        "id": "7c475075-9f94-d38c-4ad3-c1f01fc6772d",
+        "width": 25,
+        "height": 25,
+        "alpha": 0,
+        "userData": {},
+        "cssClass": "draw2d_OutputPort",
+        "bgColor": "#FF9100",
+        "color": "#1B1B1B",
+        "stroke": 0,
+        "maxFanOut": 9007199254740991,
+        "name": "output0",
+        "port": "draw2d.OutputPort",
+        "locator": "draw2d.layout.locator.OutputPortLocator"
+      },
+      {
+        "type": "draw2d.InputPort",
+        "id": "44532e2a-1d1a-d86f-f26e-34606671f035",
+        "width": 25,
+        "height": 25,
+        "alpha": 0,
+        "userData": {},
+        "cssClass": "draw2d_InputPort",
+        "bgColor": "#FF9100",
+        "color": "#1B1B1B",
+        "stroke": 0,
+        "maxFanOut": 9007199254740991,
+        "name": "input0",
+        "port": "draw2d.InputPort",
+        "locator": "draw2d.layout.locator.InputPortLocator"
+      }
+    ],
+    "bgColor": "#F06292",
+    "color": "#000000",
+    "stroke": 1,
+    "radius": 0
+  },
+  {
+    "type": "draw2d.shape.node.Start",
+    "id": "96e445d1-d37e-23e9-2069-b4c1fd73baa2",
+    "x": 114,
+    "y": 534,
+    "width": 50,
+    "height": 50,
+    "alpha": 1,
+    "userData": {},
+    "cssClass": "draw2d_shape_node_Start",
+    "ports": [
+      {
+        "type": "draw2d.OutputPort",
+        "id": "a9112e3c-45eb-f576-50b2-04c77c0735db",
+        "width": 25,
+        "height": 25,
+        "alpha": 0,
+        "userData": {},
+        "cssClass": "draw2d_OutputPort",
+        "bgColor": "#FF9100",
+        "color": "#1B1B1B",
+        "stroke": 0,
+        "maxFanOut": 9007199254740991,
+        "name": "output0",
+        "port": "draw2d.OutputPort",
+        "locator": "draw2d.layout.locator.OutputPortLocator"
+      }
+    ],
+    "bgColor": "#FFF176",
+    "color": "#000000",
+    "stroke": 1,
+    "radius": 0
+  },
+  {
     "type": "RubberConnection",
     "id": "262e4e61-d7cf-9b5b-6f6a-8a587c3d0e6f",
     "alpha": 1,
@@ -100,6 +182,28 @@
     },
     "target": {
       "node": "f6f9cb54-2e3e-99e2-3d20-95b199dcc600",
+      "port": "input0"
+    }
+  },
+  {
+    "type": "RubberConnection",
+    "id": "b9d69867-7621-420f-2edf-a175eb39acd4",
+    "alpha": 1,
+    "userData": {},
+    "cssClass": "RubberConnection",
+    "stroke": 1,
+    "color": "#33691E",
+    "outlineStroke": 0,
+    "outlineColor": "none",
+    "policy": "draw2d.policy.line.LineSelectionFeedbackPolicy",
+    "router": "draw2d.layout.connection.RubberbandRouter",
+    "radius": 2,
+    "source": {
+      "node": "96e445d1-d37e-23e9-2069-b4c1fd73baa2",
+      "port": "output0"
+    },
+    "target": {
+      "node": "6636ec03-5392-1712-efc1-beb150ec3f2b",
       "port": "input0"
     }
   }
